@@ -1,0 +1,30 @@
+/* eslint-disable import/no-extraneous-dependencies */
+import path from 'path';
+
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  plugins: [
+    react()
+  ],
+  resolve: {
+    alias: {
+      '#': path.resolve(__dirname, './src'),
+      '#assets': path.resolve(__dirname, './src/assets'),
+      '#components': path.resolve(__dirname, './src/components'),
+      '#constants': path.resolve(__dirname, './src/constants'),
+      '#graphql': path.resolve(__dirname, './src/graphql'),
+      '#providers': path.resolve(__dirname, './src/providers'),
+      '#redux': path.resolve(__dirname, './src/redux'),
+      '#router': path.resolve(__dirname, './src/router'),
+      '#theme': path.resolve(__dirname, './src/theme'),
+      '#types': path.resolve(__dirname, './src/types'),
+      '#utils': path.resolve(__dirname, './src/utils'),
+      '#views': path.resolve(__dirname, './src/views')
+    }
+  },
+  server: {
+    port: 8100
+  }
+});
