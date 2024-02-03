@@ -19,6 +19,7 @@ All commands are run from the root of the project, from a terminal:
 - react router
 - redux toolkit
 - sass
+- swiper
 - typescript
 - uuid
 - vite

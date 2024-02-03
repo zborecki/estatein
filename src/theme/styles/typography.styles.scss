@@ -1,0 +1,29 @@
+$path: '../../assets/fonts/';
+
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$path}Urbanist-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 500;
+  src: url('#{$path}Urbanist-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 600;
+  src: url('#{$path}Urbanist-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 700;
+  src: url('#{$path}Urbanist-Bold.ttf') format('truetype');
+}
