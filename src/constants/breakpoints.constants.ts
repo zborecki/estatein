@@ -5,3 +5,7 @@ export enum BOOTSTRAP_BREAKPOINT {
   XL = 1200,
   XXL = 1400
 }
+
+export enum CONTAINER {
+  PRIMARY = 1280
+}

@@ -1,12 +1,6 @@
 import { BOOTSTRAP_BREAKPOINT } from '#/constants/breakpoints.constants';
+import { FONT_WEIGHT } from '#constants/typography.constants';
 import { Typography } from '#types/atoms.types';
-
-enum FONT_WEIGHT {
-  BOLD = 700,
-  MEDIUM = 500,
-  REGULAR = 400,
-  SEMIBOLD = 600
-}
 
 export const typography: Typography = {
   caption: {
@@ -17,5 +11,13 @@ export const typography: Typography = {
       fontSize: '0.75rem'
     }
   },
-  fontFamily: ['Urbanist', 'sans-serif'].join(',')
+  fontFamily: ['Urbanist', 'sans-serif'].join(','),
+  logotype: {
+    fontSize: '1.375rem',
+    fontWeight: FONT_WEIGHT.BOLD,
+    lineHeight: '150%',
+    [`@media screen and (max-width: ${BOOTSTRAP_BREAKPOINT.LG}px)`]: {
+      fontSize: '1.063rem'
+    }
+  }
 };

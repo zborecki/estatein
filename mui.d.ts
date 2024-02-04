@@ -1,4 +1,5 @@
 import '@mui/material';
+import { TypographyStyleOptions } from '@mui/material/styles/createTypography';
 
 declare module '@mui/material/styles' {
   interface BreakpointOverrides {
@@ -7,6 +8,35 @@ declare module '@mui/material/styles' {
     md: true;
     lg: true;
     xl: true;
+    'xl+': true;
     xxl: true;
+  }
+
+  interface Palette {
+    purple: Palette['grey'];
+  }
+
+  interface PaletteOptions {
+    purple?: PaletteOptions['grey'];
+  }
+
+  interface TypographyVariants {
+    logotype: TypographyStyleOptions;
+  }
+
+  interface TypographyVariantsOptions {
+    logotype?: TypographyStyleOptions;
+  }
+}
+
+declare module '@mui/material/Button' {
+  interface ButtonPropsColorOverrides {
+    purple: true;
+  }
+}
+
+declare module '@mui/material/Typography' {
+  interface TypographyPropsVariantOverrides {
+    logotype: true;
   }
 }

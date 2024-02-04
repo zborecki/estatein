@@ -1,6 +1,11 @@
 {
   "label": {
+    "about_us": "About Us",
+    "contact_us": "Contact Us",
+    "home": "Home",
     "learn_more": "Learn More",
-    "loading": "Loading"
+    "loading": "Loading",
+    "properties": "Properties",
+    "services": "Services"
   }
 }

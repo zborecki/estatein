@@ -9,11 +9,11 @@ export const WavesPattern: FC<SVGProps> = ({ color = '#666666', sx }) => (
   <Box
     component="svg"
     fill="none"
-    height="1046px" style={{
+    height="auto" style={{
       pointerEvents: 'none'
     }}
     sx={sx} viewBox="0 0 1566 1046"
-    width="1566px"
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path

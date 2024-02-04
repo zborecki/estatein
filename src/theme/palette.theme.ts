@@ -1,21 +1,6 @@
 import { PaletteOptions } from '@mui/material';
 
-const colors = {
-  absolute: {
-    black: '#000000',
-    white: '#FFFFFF'
-  },
-  grey: {
-    8: '#141414',
-    10: '#1A1A1A',
-    15: '#262626',
-    20: '#333333',
-    30: '#4D4D4D',
-    40: '#666666',
-    50: '#808080',
-    60: '#999999'
-  }
-};
+import { colors } from '#constants/colors.constants';
 
 export const palette: PaletteOptions = {
   background: {
@@ -31,6 +16,19 @@ export const palette: PaletteOptions = {
     500: colors.grey[15],
     600: colors.grey[10],
     700: colors.grey[8]
+  },
+  primary: {
+    main: colors.purple[60]
+  },
+  purple: {
+    50: colors.purple[99],
+    100: colors.purple[97],
+    200: colors.purple[95],
+    300: colors.purple[90],
+    400: colors.purple[75],
+    500: colors.purple[70],
+    600: colors.purple[65],
+    700: colors.purple[60]
   },
   text: {
     primary: colors.absolute.white,
