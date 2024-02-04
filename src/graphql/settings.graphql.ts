@@ -1,7 +1,7 @@
 import { ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import { ENV } from '#constants/env';
+import { ENV } from '#constants/env.constants';
 
 const authLink = setContext((_, { headers }) => ({
   headers: {

@@ -1,0 +1,12 @@
+@import './typography.styles.scss';
+
+.ios {
+  &-home-indicator {
+    padding-bottom: calc(4px + env(safe-area-inset-top));
+  }
+
+  &-notch {
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+  }
+}
