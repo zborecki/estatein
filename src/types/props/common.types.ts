@@ -1,5 +1,9 @@
 import { Style } from '#/types/atoms.types';
 
+export interface ActionProps {
+  onClick?: () => void;
+}
+
 export interface BaseProps {
   sx?: Style;
 }

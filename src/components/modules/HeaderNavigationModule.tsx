@@ -10,7 +10,7 @@ import { generateKey } from '#utils/generateKey';
 export const HeaderNavigationModule = () => {
   const { pathname } = useLocation();
 
-  const isCurrentView = useCallback((to: string) => (
+  const activeViewColor = useCallback((to: string) => (
     pathname !== to ? 'transparent' : undefined
   ), [pathname]);
 
@@ -25,8 +25,8 @@ export const HeaderNavigationModule = () => {
             key={generateKey()}
             size="small"
             sx={{
-              backgroundColor: isCurrentView(to),
-              borderColor: isCurrentView(to)
+              backgroundColor: activeViewColor(to),
+              borderColor: activeViewColor(to)
             }}
             to={to}
             variant="outlined"
