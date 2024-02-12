@@ -11,6 +11,10 @@ export const typography: Typography = {
       fontSize: '0.75rem'
     }
   },
+  curvedText: {
+    fontSize: '0.75rem',
+    fontWeight: FONT_WEIGHT.SEMIBOLD
+  },
   fontFamily: ['Urbanist', 'sans-serif'].join(','),
   logotype: {
     fontSize: '1.375rem',

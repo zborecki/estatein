@@ -1,0 +1,19 @@
+import { SvgIcon, SvgIconProps } from '@mui/material';
+import { FC } from 'react';
+
+export const LinkIcon: FC<SvgIconProps> = (props) => (
+  <SvgIcon
+    fill="none"
+    height="24"
+    viewBox="0 0 24 24"
+    width="24"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M4.5 19.5L19.5 4.5M19.5 4.5L8.25 4.5M19.5 4.5V15.75" stroke="white"
+      strokeLinecap="round" strokeLinejoin="round"
+      strokeWidth="1.5"
+    />
+  </SvgIcon>
+);
