@@ -32,7 +32,7 @@ export const notificationBarStyles: Styles<Sx> = {
     left: 0
   },
   root: {
-    backgroundColor: 'background.paper',
+    backgroundColor: 'grey.600',
     overflow: 'hidden',
     position: 'relative'
   }

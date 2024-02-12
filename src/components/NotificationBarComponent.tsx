@@ -27,7 +27,7 @@ export const NotificationBarComponent = () => {
       sx={notificationBarStyles.root}
     >
       <WavesPattern color={palette.grey[200]} sx={notificationBarStyles.pattern} />
-      <Container maxWidth="xxl">
+      <Container maxWidth="xl+">
         {
           status === 'success'
             ? <NotificationBarSwiperModule notifications={data} />
