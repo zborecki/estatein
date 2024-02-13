@@ -1,10 +1,10 @@
 import { Box } from '@mui/material';
 import { FC } from 'react';
 
-import { HeroCurvedTextModule } from '#components/modules/HeroCurvedTextModule';
+import { HeroSection } from '#components/section/HeroSection';
 
 export const HomeView: FC = () => (
   <Box component="main">
-    <HeroCurvedTextModule />
+    <HeroSection />
   </Box>
 );

@@ -1,6 +1,6 @@
 import { Styles } from '#types/atoms.types';
 
-type Sx = 'curvedButtonDummyPlug' | 'curvedButtonRoot';
+type Sx = 'curvedButtonDummyPlug' | 'curvedButtonRoot' | 'title';
 
 export const heroSectionStyles: Styles<Sx> = {
   curvedButtonDummyPlug: {
@@ -20,5 +20,8 @@ export const heroSectionStyles: Styles<Sx> = {
     borderRadius: '50%',
     maxWidth: 'fit-content',
     position: 'relative'
+  },
+  title: {
+    mb: 2.5
   }
 };

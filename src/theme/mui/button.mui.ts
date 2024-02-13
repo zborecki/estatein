@@ -1,17 +1,9 @@
-import {
-  ComponentsOverrides, ComponentsProps, ComponentsVariants, Theme, alpha
-} from '@mui/material';
+import { Components, alpha } from '@mui/material';
 
 import { colors } from '#constants/colors.constants';
 import { FONT_WEIGHT } from '#constants/typography.constants';
 
-interface MUIButton {
-  defaultProps?: ComponentsProps['MuiButton'];
-  styleOverrides?: ComponentsOverrides<Theme>['MuiButton'];
-  variants?: ComponentsVariants<Theme>['MuiButton'];
-}
-
-export const muiButton: MUIButton = {
+export const muiButton: Components['MuiButton'] = {
   defaultProps: {
     size: 'medium',
     variant: 'contained'
