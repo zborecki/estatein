@@ -1,16 +1,17 @@
-import { Box, Container, Paper } from '@mui/material';
+import { Box, Container } from '@mui/material';
 
-import { HeroButtonsModule } from '#components/modules/HeroButtonsModule';
-import { HeroIntroductionModule } from '#components/modules/HeroIntroductionModule';
+import { HeroPanelModule } from '#components/modules/HeroPanelModule';
+import { heroSectionStyles } from '#theme/styles/heroSection.styles';
 
 export const HeroSection = () => (
-  <Box component="section">
-    <Container>
-      <HeroIntroductionModule />
-      <HeroButtonsModule />
-      <Paper>
-        123123
-      </Paper>
+  <Box component="section" sx={heroSectionStyles.root}>
+    <Container
+      maxWidth={false}
+      sx={heroSectionStyles.container}
+      disableGutters
+    >
+      <HeroPanelModule />
+      <div>Image</div>
     </Container>
   </Box>
 );

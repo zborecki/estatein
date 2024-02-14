@@ -48,5 +48,10 @@ export const typography: Typography = {
       fontWeight: 700,
       lineHeight: '2.375rem'
     }
+  },
+  h5: {
+    fontSize: '1.875rem',
+    fontWeight: 700,
+    lineHeight: '150%'
   }
 };

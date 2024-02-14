@@ -7,11 +7,13 @@ export const HeroIntroductionModule = () => {
   const { t } = useTranslation('');
 
   return (
-    <Box>
+    <Box sx={heroSectionStyles.introduction}>
       <Typography sx={heroSectionStyles.title} variant="h1">
         { t('hero_section.title') }
       </Typography>
-      <Typography>{ t('hero_section.description') }</Typography>
+      <Typography sx={heroSectionStyles.description}>
+        { t('hero_section.description') }
+      </Typography>
     </Box>
   );
 };

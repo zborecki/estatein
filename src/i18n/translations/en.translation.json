@@ -13,5 +13,10 @@
     "loading": "Loading",
     "properties": "Properties",
     "services": "Services"
+  },
+  "summary_card": {
+    "happy_customers": "Happy customers",
+    "properties_for_clients": "Properties for clients",
+    "years_of_experience": "Years of experience"
   }
 }
