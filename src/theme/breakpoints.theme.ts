@@ -14,10 +14,15 @@ export const breakpoints: BreakpointsOptions = {
   }
 };
 
-export const defineBreakpoint = (breakpoint: Breakpoint) => {
+export const defineBreakpoint = (breakpoint: Breakpoint | number) => {
+  if (typeof breakpoint === 'number') {
+    return `@media screen and (max-width: ${breakpoint}px)`;
+  }
+
   if (breakpoints.values) {
     return `@media screen and (max-width: ${breakpoints.values[breakpoint]}px)`;
   }
+
   // eslint-disable-next-line no-console
   console.error(`
     The breakpoint is invalid or does not exist. 

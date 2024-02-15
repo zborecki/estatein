@@ -14,9 +14,11 @@ export const HeroCurvedTextModule = () => {
       <Box sx={heroSectionStyles.curvedButtonDummyPlug}>
         <LinkIcon sx={{ display: 'block' }} />
       </Box>
-      <CurvedTextComponent>
-        { t('hero_section.curved_text') }
-      </CurvedTextComponent>
+      <Box sx={heroSectionStyles.curvedButtonController}>
+        <CurvedTextComponent>
+          { t('hero_section.curved_text') }
+        </CurvedTextComponent>
+      </Box>
     </Box>
   );
 };

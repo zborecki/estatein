@@ -6,6 +6,11 @@ export type CSSStyles<T extends string> = {
   [key in T]?: CSSProperties;
 };
 
+export interface Image {
+  alt?: string;
+  src: string;
+}
+
 export interface Link {
   label: string;
   to: string;

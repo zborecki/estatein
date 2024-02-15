@@ -6,7 +6,10 @@ export const typography: Typography = {
   body1: {
     fontSize: '1rem',
     fontWeight: FONT_WEIGHT.MEDIUM,
-    lineHeight: '150%'
+    lineHeight: '150%',
+    [defineBreakpoint('lg')]: {
+      fontSize: '0.875rem'
+    }
   },
   caption: {
     fontSize: '0.875rem',
@@ -32,7 +35,13 @@ export const typography: Typography = {
   h1: {
     fontSize: '2.875rem',
     fontWeight: 600,
-    lineHeight: '120%'
+    lineHeight: '120%',
+    [defineBreakpoint('xl')]: {
+      fontSize: '2.5rem'
+    },
+    [defineBreakpoint('xl')]: {
+      fontSize: '1.75rem'
+    }
   },
   h4: {
     fontSize: '2.5rem',
@@ -52,6 +61,9 @@ export const typography: Typography = {
   h5: {
     fontSize: '1.875rem',
     fontWeight: 700,
-    lineHeight: '150%'
+    lineHeight: '150%',
+    [defineBreakpoint('xl')]: {
+      fontSize: '1.5rem'
+    }
   }
 };
