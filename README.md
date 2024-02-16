@@ -13,9 +13,11 @@ All commands are run from the root of the project, from a terminal:
 ## 📦 Packages
 - capacitor
 - eslint (custom Airbnb's rules)
+- graphql
 - material ui
 - normalize.css
 - react
+- react lazy load image component
 - react router
 - redux toolkit
 - sass

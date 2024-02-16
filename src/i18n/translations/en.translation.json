@@ -1,11 +1,22 @@
 {
+  "hero_section": {
+    "curved_text": "✨ Discovery Your Dream Property",
+    "description": "Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.",
+    "title": "Discover Your Dream Property with Estatein"
+  },
   "label": {
     "about_us": "About Us",
+    "browse_properties": "Browse Properties",
     "contact_us": "Contact Us",
     "home": "Home",
     "learn_more": "Learn More",
     "loading": "Loading",
     "properties": "Properties",
     "services": "Services"
+  },
+  "summary_card": {
+    "happy_customers": "Happy customers",
+    "properties_for_clients": "Properties for clients",
+    "years_of_experience": "Years of experience"
   }
 }

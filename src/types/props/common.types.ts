@@ -4,6 +4,10 @@ export interface ActionProps {
   onClick?: () => void;
 }
 
+export interface ChildrenProps {
+  children: string;
+}
+
 export interface BaseProps {
   sx?: Style;
 }

@@ -1,5 +1,9 @@
 @import './typography.styles.scss';
 
+svg {
+  display: block;
+}
+
 .ios {
   &-home-indicator {
     padding-bottom: calc(4px + env(safe-area-inset-top));

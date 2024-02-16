@@ -20,7 +20,7 @@ export const HeaderComponent = () => {
 
   return (
     <Box component="header" sx={headerStyles.root}>
-      <Container maxWidth="xl+" sx={headerStyles.container}>
+      <Container sx={headerStyles.container}>
         <LogoComponent />
         {
           !isTablet
