@@ -65,5 +65,14 @@ export const typography: Typography = {
     [defineBreakpoint('xl')]: {
       fontSize: '1.5rem'
     }
+  },
+  subtitle2: {
+    fontSize: '1rem',
+    fontWeight: 600,
+    letterSpacing: 'inherit',
+    lineHeight: '150%',
+    [defineBreakpoint('lg')]: {
+      fontSize: '0.875rem'
+    }
   }
 };

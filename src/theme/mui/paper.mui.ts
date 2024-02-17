@@ -10,7 +10,7 @@ export const muiPaper: Components['MuiPaper'] = {
     outlined: {
       backgroundColor: colors.grey[10],
       borderColor: colors.grey[15],
-      borderRadius: 20
+      borderRadius: 10
     }
   }
 };

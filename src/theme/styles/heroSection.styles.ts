@@ -30,10 +30,10 @@ export const heroSectionStyles: Styles<Sx> = {
     zIndex: 3
   },
   buttons: {
-    mb: 6.25,
+    // mb: 6.25,
     [defineBreakpoint('sm')]: {
-      flexDirection: 'column',
-      mb: 5
+      flexDirection: 'column'
+      // mb: 5
     }
   },
   container: {
@@ -144,29 +144,33 @@ export const heroSectionStyles: Styles<Sx> = {
     }
   },
   introduction: {
-    mb: 6.25,
-    [defineBreakpoint('sm')]: {
-      mb: 5
-    }
+    // mb: 6.25,
+    // [defineBreakpoint('sm')]: {
+    //   mb: 5
+    // }
   },
   panel: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 6.25,
+    justifyContent: 'center',
+    minHeight: 620,
     position: 'relative',
-    pt: 12.25,
     pl: 10,
     [defineBreakpoint('xl')]: {
-      pt: 10,
+      minHeight: 560,
       pl: 7.5
     },
     [defineBreakpoint('lg')]: {
-      pt: 8,
+      gap: 5,
+      minHeight: 460,
       pl: 4
     },
     [defineBreakpoint(826)]: {
-      pt: 6,
       pl: 2
     },
     [defineBreakpoint('md')]: {
-      pt: 0,
+      minHeight: 'inherit',
       pl: 0
     }
   },
