@@ -11,6 +11,11 @@ export interface Image {
   src: string;
 }
 
+export interface Information {
+  description: string;
+  title: string;
+}
+
 export interface Link {
   label: string;
   to: string;
