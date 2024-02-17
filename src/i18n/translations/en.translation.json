@@ -4,6 +4,12 @@
     "description": "Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.",
     "title": "Discover Your Dream Property with Estatein"
   },
+  "its_simple_cards": {
+    "apartments": "Effortless property management",
+    "camera": "Unlock property value",
+    "home": "Find your dream home",
+    "sun": "Smart investments & Informed Decisions"
+  },
   "label": {
     "about_us": "About Us",
     "browse_properties": "Browse Properties",
