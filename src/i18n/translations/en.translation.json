@@ -1,4 +1,7 @@
 {
+  "error": {
+    "common": "Sorry, but we're unable to connect to the server :("
+  },
   "featured_properties_section": {
     "description": "Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein.",
     "title": "Featured properties"

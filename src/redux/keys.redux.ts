@@ -1,3 +1,4 @@
 export enum SLICE {
-  NOTIFICATIONS = 'notifications'
+  NOTIFICATIONS = 'notifications',
+  PROPERTIES = 'properties'
 }

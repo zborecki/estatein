@@ -21,6 +21,10 @@ export interface Link {
   to: string;
 }
 
+export type Location = {
+  [key in 'latitude' | 'longitude']: number;
+};
+
 export type Style = SxProps<Theme>;
 
 export type Styles<T extends string> = {
