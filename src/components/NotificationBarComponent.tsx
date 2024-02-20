@@ -1,4 +1,4 @@
-import { Box, Container, useTheme } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import { useEffect } from 'react';
 
 import { useAppDispatch } from '#/hooks/useAppDispatch';
@@ -13,7 +13,6 @@ import { isIOS } from '#utils/getPlatform';
 export const NotificationBarComponent = () => {
   const dispatch = useAppDispatch();
   const { data, status } = useAppSelector().notifications;
-  const { palette } = useTheme();
 
   useEffect(() => {
     // dispatch(FETCH_NOTIFICATIONS_THUNK());
@@ -26,7 +25,7 @@ export const NotificationBarComponent = () => {
       component="div"
       sx={notificationBarStyles.root}
     >
-      <WavesPattern color={palette.grey[200]} sx={notificationBarStyles.pattern} />
+      <WavesPattern sx={notificationBarStyles.pattern} />
       <Container maxWidth="xl+">
         {
           status === 'success'

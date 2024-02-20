@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
 
 import { PaginationSettings } from '#types/graphql/pagination.types';
-import { UsePaginationProps } from '#types/props/UsePaginationProps';
+import { UsePaginationProps } from '#types/props/usePagination.types';
 
 export const usePagination = <T extends object>({
   offset = 3,

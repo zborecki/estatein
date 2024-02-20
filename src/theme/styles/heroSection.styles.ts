@@ -198,6 +198,9 @@ export const heroSectionStyles: Styles<Sx> = {
     left: 0,
     opacity: 0.2,
     overflow: 'hidden',
+    path: {
+      stroke: ({ palette }) => palette.grey[200]
+    },
     position: 'absolute',
     top: 0,
     transform: 'scale(4)'

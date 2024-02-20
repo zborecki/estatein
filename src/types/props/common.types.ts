@@ -12,6 +12,6 @@ export interface BaseProps {
   sx?: Style;
 }
 
-export interface SVGProps extends BaseProps {
-  color?: string;
+export interface UnknownElementProps {
+  ariaLabel?: string;
 }
