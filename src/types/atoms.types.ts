@@ -6,6 +6,8 @@ export type CSSStyles<T extends string> = {
   [key in T]?: CSSProperties;
 };
 
+export type Currency = 'USD';
+
 export interface Image {
   alt?: string;
   src: string;

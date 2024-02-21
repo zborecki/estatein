@@ -1,8 +1,9 @@
+import { TypographyOptions } from '@mui/material/styles/createTypography';
+
 import { FONT_WEIGHT } from '#constants/typography.constants';
 import { defineBreakpoint } from '#theme/breakpoints.theme';
-import { Typography } from '#types/atoms.types';
 
-export const typography: Typography = {
+export const typography: TypographyOptions = {
   body1: {
     fontSize: '1rem',
     fontWeight: FONT_WEIGHT.MEDIUM,
@@ -65,6 +66,11 @@ export const typography: Typography = {
     [defineBreakpoint('xl')]: {
       fontSize: '1.5rem'
     }
+  },
+  h6: {
+    fontSize: '1.25rem',
+    fontWeight: FONT_WEIGHT.SEMIBOLD,
+    lineHeight: '150%'
   },
   section: {
     fontSize: '2.375rem',

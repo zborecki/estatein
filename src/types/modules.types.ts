@@ -7,6 +7,7 @@ export interface Notification {
 }
 
 export interface Property extends Information {
+  currency: string;
   images: ImageResponse[];
   location: Location;
   price: number;

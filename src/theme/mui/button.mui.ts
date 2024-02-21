@@ -1,7 +1,7 @@
 import { Components, alpha } from '@mui/material';
 
 import { colors } from '#constants/colors.constants';
-import { FONT_WEIGHT } from '#constants/typography.constants';
+import { typography } from '#theme/typography.theme';
 
 export const muiButton: Components['MuiButton'] = {
   defaultProps: {
@@ -32,9 +32,7 @@ export const muiButton: Components['MuiButton'] = {
       padding: '11px 20px'
     },
     sizeMedium: {
-      fontSize: '0.875rem',
-      fontWeight: FONT_WEIGHT.MEDIUM,
-      lineHeight: '150%',
+      ...typography.caption,
       padding: '14px 20px'
     },
     sizeSmall: {

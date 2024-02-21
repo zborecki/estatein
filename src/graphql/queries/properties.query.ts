@@ -3,6 +3,7 @@ import { gql } from '@apollo/client';
 import { BASE_PAGINATION_META } from '#graphql/common.constants';
 
 const PROPERTIES_PAGINATION_BODY = `
+  currency
   description
   images(first: 1) {
     alt

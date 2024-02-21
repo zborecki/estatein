@@ -12,6 +12,10 @@ export interface BaseProps {
   sx?: Style;
 }
 
+export interface SlugProps {
+  slug: string;
+}
+
 export interface UnknownElementProps {
   ariaLabel?: string;
 }
