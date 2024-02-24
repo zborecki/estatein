@@ -15,6 +15,7 @@ All commands are run from the root of the project, from a terminal:
 - clsx
 - eslint (custom Airbnb's rules)
 - graphql
+- i18next
 - material ui
 - normalize.css
 - react

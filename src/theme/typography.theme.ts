@@ -1,8 +1,9 @@
+import { TypographyOptions } from '@mui/material/styles/createTypography';
+
 import { FONT_WEIGHT } from '#constants/typography.constants';
 import { defineBreakpoint } from '#theme/breakpoints.theme';
-import { Typography } from '#types/atoms.types';
 
-export const typography: Typography = {
+export const typography: TypographyOptions = {
   body1: {
     fontSize: '1rem',
     fontWeight: FONT_WEIGHT.MEDIUM,
@@ -34,7 +35,7 @@ export const typography: Typography = {
   },
   h1: {
     fontSize: '2.875rem',
-    fontWeight: 600,
+    fontWeight: FONT_WEIGHT.SEMIBOLD,
     lineHeight: '120%',
     [defineBreakpoint('xl')]: {
       fontSize: '2.5rem'
@@ -45,30 +46,40 @@ export const typography: Typography = {
   },
   h4: {
     fontSize: '2.5rem',
-    fontWeight: 700,
+    fontWeight: FONT_WEIGHT.BOLD,
     lineHeight: '3.625rem',
     [defineBreakpoint('md')]: {
       fontSize: '2rem',
-      fontWeight: 700,
+      fontWeight: FONT_WEIGHT.BOLD,
       lineHeight: '2.625rem'
     },
     [defineBreakpoint('sm')]: {
       fontSize: '1.625rem',
-      fontWeight: 700,
+      fontWeight: FONT_WEIGHT.BOLD,
       lineHeight: '2.375rem'
     }
   },
   h5: {
     fontSize: '1.875rem',
-    fontWeight: 700,
+    fontWeight: FONT_WEIGHT.BOLD,
     lineHeight: '150%',
     [defineBreakpoint('xl')]: {
       fontSize: '1.5rem'
     }
   },
+  h6: {
+    fontSize: '1.25rem',
+    fontWeight: FONT_WEIGHT.SEMIBOLD,
+    lineHeight: '150%'
+  },
+  section: {
+    fontSize: '2.375rem',
+    fontWeight: FONT_WEIGHT.MEDIUM,
+    lineHeight: '150%'
+  },
   subtitle2: {
     fontSize: '1rem',
-    fontWeight: 600,
+    fontWeight: FONT_WEIGHT.SEMIBOLD,
     letterSpacing: 'inherit',
     lineHeight: '150%',
     [defineBreakpoint('lg')]: {

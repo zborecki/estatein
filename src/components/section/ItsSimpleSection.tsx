@@ -6,7 +6,7 @@ import { itsSimpleSectionStyles } from '#theme/styles/itsSimpleSection.styles';
 import { generateKey } from '#utils/generateKey';
 
 export const ItsSimpleSection = () => (
-  <Box sx={itsSimpleSectionStyles.root}>
+  <Box component="section" sx={itsSimpleSectionStyles.root}>
     <Container
       maxWidth={false}
       sx={itsSimpleSectionStyles.container}

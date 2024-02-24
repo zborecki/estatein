@@ -1,6 +1,4 @@
-import { defineBreakpoint } from '../breakpoints.theme';
-
-import { colors } from '#constants/colors.constants';
+import { defineBreakpoint } from '#theme/breakpoints.theme';
 import { Styles } from '#types/atoms.types';
 
 type Sx = 'arrow' | 'icon' | 'root' | 'title';
@@ -11,7 +9,7 @@ export const itsSimpleCardStyles: Styles<Sx> = {
     right: 20,
     top: 20,
     '& path': {
-      stroke: colors.grey[30],
+      stroke: ({ palette }) => palette.grey[300],
       transition: 'stroke .25s ease-out'
     }
   },
@@ -32,7 +30,7 @@ export const itsSimpleCardStyles: Styles<Sx> = {
     ':active': {
       backgroundColor: 'grey.500',
       '& .Estatein-link-icon path': {
-        stroke: colors.purple[60]
+        stroke: ({ palette }) => palette.purple[700]
       }
     }
   },

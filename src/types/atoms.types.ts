@@ -6,15 +6,26 @@ export type CSSStyles<T extends string> = {
   [key in T]?: CSSProperties;
 };
 
+export type Currency = 'USD';
+
 export interface Image {
   alt?: string;
   src: string;
+}
+
+export interface Information {
+  description: string;
+  title: string;
 }
 
 export interface Link {
   label: string;
   to: string;
 }
+
+export type Location = {
+  [key in 'latitude' | 'longitude']: number;
+};
 
 export type Style = SxProps<Theme>;
 

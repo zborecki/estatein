@@ -23,11 +23,13 @@ declare module '@mui/material/styles' {
   interface TypographyVariants {
     curvedText: TypographyStyleOptions;
     logotype: TypographyStyleOptions;
+    section: TypographyStyleOptions;
   }
 
   interface TypographyVariantsOptions {
     curvedText?: TypographyStyleOptions;
     logotype?: TypographyStyleOptions;
+    section?: TypographyStyleOptions;
   }
 }
 
@@ -41,5 +43,6 @@ declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
     curvedText: true;
     logotype: true;
+    section: true;
   }
 }

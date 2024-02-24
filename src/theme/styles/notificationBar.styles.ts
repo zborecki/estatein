@@ -26,6 +26,9 @@ export const notificationBarStyles: Styles<Sx> = {
   },
   pattern: {
     overflow: 'hidden',
+    path: {
+      stroke: ({ palette }) => palette.grey[200]
+    },
     position: 'absolute',
     top: '50%',
     transform: 'translateY(-50%)',
