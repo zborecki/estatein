@@ -5,9 +5,10 @@ All commands are run from the root of the project, from a terminal:
 | :------------------------ | :------------------------------------------------- |
 | `npm i`                   | Install dependencies                               |
 | `npm run add:ios`         | Initialize an iOS platform                         |
-| `npm run build`           | Build the application to `./dist`                  |
+| `npm run build:dev`       | Build the development version to `./dist`          |
+| `npm run capacitor:copy`  | Copy web assets to the application                 |
 | `npm run dev`             | Launch the development server at `localhost:3000`  |
-| `npm run ios`             | Run the iOS simulator                              |
+| `npm run ios:dev`         | Run the iOS simulator for developers               |
 | `npm run lint`            | Analyze files and identify incorrect patterns      |
 
 ## 📦 Packages
