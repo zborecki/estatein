@@ -1,10 +1,9 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { SET_NOTIFICATIONS_STATUS } from '../slices/notifications.slice';
-
 import i18n from '#i18n/settings.i18n';
 import { getNotificationsMockup } from '#mockups/promises/notifications.promise';
 import { SLICE } from '#redux/keys.redux';
+import { SET_NOTIFICATIONS_STATUS } from '#redux/slices/notifications.slice';
 import { getNotifications } from '#services/notifications.service';
 import { RootState } from '#types/redux/common.types';
 

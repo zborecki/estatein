@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Skeleton } from '@mui/material';
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -8,7 +8,12 @@ import { paginationStyles } from '#theme/styles/pagination.styles';
 import { PaginationComponentProps } from '#types/props/pagination.types';
 
 export const PaginationComponent: FC<PaginationComponentProps> = ({
-  onNextPage, onPreviousPage, page
+  disableNextButton,
+  disablePreviousButton,
+  isLoading = false,
+  onNextPage,
+  onPreviousPage,
+  page
 }) => {
   const { t } = useTranslation('');
 
@@ -16,12 +21,22 @@ export const PaginationComponent: FC<PaginationComponentProps> = ({
     <Box sx={paginationStyles.root}>
       <ArrowButtonComponent
         ariaLabel={t('label.previous')}
+        disabled={disablePreviousButton}
         variant="left"
-        disabled
         onClick={onPreviousPage}
       />
-      <PaginationMetaModule page={page} />
-      <ArrowButtonComponent ariaLabel={t('label.next')} onClick={onNextPage} />
+      {
+        isLoading ? (
+          <Skeleton sx={paginationStyles.skeleton}>
+            <PaginationMetaModule page={page} />
+          </Skeleton>
+        ) : <PaginationMetaModule page={page} />
+      }
+      <ArrowButtonComponent
+        ariaLabel={t('label.next')}
+        disabled={disableNextButton}
+        onClick={onNextPage}
+      />
     </Box>
   );
 };

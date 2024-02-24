@@ -1,7 +1,7 @@
-import { convertProperties } from '#/utils/api/convertProperties';
 import { PROPERTIES_PAGINATION_QUERY } from '#graphql/queries/properties.query';
 import { usePagination } from '#hooks/usePagination';
 import { PropertiesPaginationResponse } from '#types/graphql/properties.types';
+import { convertProperties } from '#utils/api/convertProperties';
 
 export const useProperties = () => {
   const {

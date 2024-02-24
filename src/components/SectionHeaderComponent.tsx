@@ -1,11 +1,11 @@
 import { Box } from '@mui/material';
 import { FC, useMemo } from 'react';
 
-import { mergeStyles } from '#/utils/mergeStyles';
 import { StarsPatternComponent } from '#components/StarsPatternComponent';
 import { SectionHeaderContentModule } from '#components/modules/SectionHeaderContentModule';
 import { sectionHeaderStyles } from '#theme/styles/sectionHeader.styles';
 import { SectionHeaderComponentProps } from '#types/props/sectionHeader.types';
+import { mergeStyles } from '#utils/mergeStyles';
 
 export const SectionHeaderComponent: FC<SectionHeaderComponentProps> = ({
   children,

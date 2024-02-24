@@ -1,5 +1,4 @@
-import { defineBreakpoint } from '../breakpoints.theme';
-
+import { defineBreakpoint } from '#theme/breakpoints.theme';
 import { Styles } from '#types/atoms.types';
 
 type Sx = 'arrow' | 'icon' | 'root' | 'title';

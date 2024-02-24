@@ -6,10 +6,10 @@ type Sx = 'action' | 'body' | 'description' | 'image' | 'location' | 'price' | '
 export const propertyCardStyles: Styles<Sx> = {
   action: {
     display: 'grid',
+    gap: 2,
     gridTemplateColumns: '1fr minmax(0, 238px)',
     [defineBreakpoint('sm')]: {
-      gridTemplateColumns: 'none',
-      rowGap: 2
+      gridTemplateColumns: 'none'
     }
   },
   body: {

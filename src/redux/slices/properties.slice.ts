@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 import { SLICE } from '#redux/keys.redux';
-import { FETCH_MORE_PROPERTIES_THUNK, FETCH_PROPERTIES_THUNK } from '#redux/thunks/properties.thunk';
+import { FETCH_PROPERTIES_THUNK } from '#redux/thunks/properties.thunk';
 import { PropertiesSetOffsetAction, PropertiesSetSkipAction } from '#types/redux/actions/properties.action';
 import { SetStatusAction } from '#types/redux/common.actions';
 import { PropertiesState } from '#types/redux/slices/properties.types';
@@ -24,19 +24,6 @@ const initialState: PropertiesState = {
 
 const propertiesSlice = createSlice({
   extraReducers: ({ addCase }) => {
-    addCase(FETCH_MORE_PROPERTIES_THUNK.fulfilled, (state, { payload }) => ({
-      ...state,
-      ...payload,
-      status: 'success'
-    }));
-    addCase(FETCH_MORE_PROPERTIES_THUNK.pending, (state) => ({
-      ...state,
-      status: 'loading'
-    }));
-    addCase(FETCH_MORE_PROPERTIES_THUNK.rejected, (state) => ({
-      ...state,
-      status: 'error'
-    }));
     addCase(FETCH_PROPERTIES_THUNK.fulfilled, (state, { payload }) => ({
       ...state,
       ...payload,

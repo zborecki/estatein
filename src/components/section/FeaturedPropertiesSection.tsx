@@ -1,27 +1,28 @@
 import { Container } from '@mui/material';
-import { useCallback, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { FeaturedPropertiesListComponent } from '#components/FeaturedPropertiesListComponent';
 import { PaginationComponent } from '#components/PaginationComponent';
 import { SectionHeaderComponent } from '#components/SectionHeaderComponent';
+import { FeaturedPropertiesListSkeleton } from '#components/skeletons/FeaturedPropertiesListSkeleton';
 import { SectionStyled } from '#components/styled/SectionStyled';
 import { useAppDispatch } from '#hooks/useAppDispatch';
 import { useAppSelector } from '#hooks/useAppSelector';
-import { FETCH_MORE_PROPERTIES_THUNK, FETCH_PROPERTIES_THUNK } from '#redux/thunks/properties.thunk';
+import { useFeaturedProperties } from '#hooks/useFeaturedProperties';
+import { FETCH_PROPERTIES_THUNK } from '#redux/thunks/properties.thunk';
 import { featuredPropertiesSectionStyles } from '#theme/styles/featuredPropertiesSection.styles';
 
 export const FeaturedPropertiesSection = () => {
   const { t } = useTranslation('');
   const dispatch = useAppDispatch();
-  const { status } = useAppSelector().properties;
+  const { onNextPage, onPreviousPage } = useFeaturedProperties();
+  const {
+    aggregate, status, offset, pageInfo, skip
+  } = useAppSelector().properties;
 
   useEffect(() => {
     dispatch(FETCH_PROPERTIES_THUNK());
-  }, []);
-
-  const fetchMoreProperties = useCallback(() => {
-    dispatch(FETCH_MORE_PROPERTIES_THUNK());
   }, []);
 
   return (
@@ -32,15 +33,20 @@ export const FeaturedPropertiesSection = () => {
           title={t('featured_properties_section.title')}
         />
         {
-          status === 'success' && <FeaturedPropertiesListComponent />
+          status === 'success'
+            ? <FeaturedPropertiesListComponent />
+            : <FeaturedPropertiesListSkeleton />
         }
         <PaginationComponent
+          disableNextButton={!pageInfo.hasNextPage}
+          disablePreviousButton={!pageInfo.hasPreviousPage}
+          isLoading={status === 'loading'}
           page={{
-            current: 1,
-            total: 10
+            current: (skip / offset) + 1,
+            total: Math.ceil(aggregate.count / offset)
           }}
-          onNextPage={fetchMoreProperties}
-          onPreviousPage={() => {}}
+          onNextPage={onNextPage}
+          onPreviousPage={onPreviousPage}
         />
       </Container>
     </SectionStyled>

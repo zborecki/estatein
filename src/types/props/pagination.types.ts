@@ -1,4 +1,7 @@
 export interface PaginationComponentProps extends PaginationMetaModuleProps {
+  disablePreviousButton?: boolean;
+  disableNextButton?: boolean;
+  isLoading?: boolean;
   onNextPage: () => void;
   onPreviousPage: () => void;
 }

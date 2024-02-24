@@ -1,7 +1,7 @@
 import { defineBreakpoint } from '#theme/breakpoints.theme';
 import { Styles } from '#types/atoms.types';
 
-type Sx = 'meta' | 'root';
+type Sx = 'meta' | 'root' | 'skeleton';
 
 export const paginationStyles: Styles<Sx> = {
   meta: {
@@ -21,12 +21,12 @@ export const paginationStyles: Styles<Sx> = {
     gridTemplateColumns: '1fr repeat(2,auto)',
     mt: 5,
     py: 2,
-    '& p.MuiTypography-root': {
+    '& p.MuiTypography-root, .MuiSkeleton-root': {
       gridRow: 1
     },
     [defineBreakpoint('md')]: {
       gridTemplateColumns: 'auto 1fr auto',
-      '& p.MuiTypography-root': {
+      '& p.MuiTypography-root, .MuiSkeleton-root': {
         gridRow: 'inherit',
         textAlign: 'center'
       }
@@ -34,6 +34,11 @@ export const paginationStyles: Styles<Sx> = {
     [defineBreakpoint('sm')]: {
       border: 'none',
       mt: 30 / 8
+    }
+  },
+  skeleton: {
+    [defineBreakpoint('md')]: {
+      mx: 'auto'
     }
   }
 };

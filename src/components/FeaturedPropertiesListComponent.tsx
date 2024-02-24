@@ -3,6 +3,7 @@ import { Box } from '@mui/material';
 import { PropertyCardComponent } from '#components/PropertyCardComponent';
 import { useAppSelector } from '#hooks/useAppSelector';
 import { featuredPropertiesListStyles } from '#theme/styles/featuredPropertiesList.styles';
+import { generateKey } from '#utils/generateKey';
 
 export const FeaturedPropertiesListComponent = () => {
   const { data } = useAppSelector().properties;
@@ -17,6 +18,7 @@ export const FeaturedPropertiesListComponent = () => {
             acronym={currency}
             description={description}
             image={images[0].url}
+            key={generateKey()}
             location={String(location.latitude)}
             price={price}
             slug={slug}
