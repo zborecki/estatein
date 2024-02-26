@@ -31,6 +31,7 @@ export const NotificationComponent: FC<Notification> = ({
           <LinkComponent
             label={button.label}
             sx={buttonStyle}
+            target={button.isExternalLink ? '_blank' : '_self'}
             to={button.to}
             variant="caption"
           />

@@ -30,7 +30,7 @@ export const FeaturedPropertiesSection = () => {
       <Container>
         <SectionHeaderComponent
           description={t('featured_properties_section.description')}
-          title={t('featured_properties_section.title')}
+          title={t('label.featured_properties')}
         />
         {
           status === 'success'

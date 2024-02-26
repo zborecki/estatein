@@ -19,6 +19,7 @@ export interface Information {
 }
 
 export interface Link {
+  isExternalLink?: boolean;
   label: string;
   to: string;
 }
@@ -26,6 +27,8 @@ export interface Link {
 export type Location = {
   [key in 'latitude' | 'longitude']: number;
 };
+
+export type SocialType = 'facebook' | 'linkedin' | 'youtube';
 
 export type Style = SxProps<Theme>;
 
