@@ -33,6 +33,9 @@
     "services": "Services",
     "view_property_details": "View Property Details"
   },
+  "placeholder": {
+    "email": "Enter Your E-mail"
+  },
   "summary_card": {
     "happy_customers": "Happy customers",
     "properties_for_clients": "Properties for clients",

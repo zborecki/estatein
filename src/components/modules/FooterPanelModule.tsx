@@ -5,7 +5,7 @@ import { NewsletterFormComponent } from '#components/NewsletterFormComponent';
 import { footerStyles } from '#theme/styles/footer.styles';
 
 export const FooterPanelModule = () => (
-  <Box>
+  <Box sx={footerStyles.panel}>
     <LogoComponent sx={footerStyles.logo} />
     <NewsletterFormComponent />
   </Box>
