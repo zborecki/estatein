@@ -1,6 +1,7 @@
 import { Box, Container } from '@mui/material';
 import { useEffect } from 'react';
 
+import { FooterAnchorsModule } from '#components/modules/FooterAnchorsModule';
 import { FooterBottomModule } from '#components/modules/FooterBottomModule';
 import { FooterPanelModule } from '#components/modules/FooterPanelModule';
 import { useAppDispatch } from '#hooks/useAppDispatch';
@@ -18,6 +19,7 @@ export const FooterComponent = () => {
     <Box component="footer">
       <Container sx={footerStyles.top}>
         <FooterPanelModule />
+        <FooterAnchorsModule />
       </Container>
       <FooterBottomModule />
     </Box>

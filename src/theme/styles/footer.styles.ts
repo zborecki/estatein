@@ -19,6 +19,8 @@ export const footerStyles: Styles<Sx> = {
     maxWidth: 326
   },
   top: {
+    display: 'flex',
+    justifyContent: 'space-between',
     py: 10
   }
 };

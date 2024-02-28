@@ -7,6 +7,7 @@ import { PaginationComponent } from '#components/PaginationComponent';
 import { SectionHeaderComponent } from '#components/SectionHeaderComponent';
 import { FeaturedPropertiesListSkeleton } from '#components/skeletons/FeaturedPropertiesListSkeleton';
 import { SectionStyled } from '#components/styled/SectionStyled';
+import { ANCHOR } from '#constants/anchors.constants';
 import { useAppDispatch } from '#hooks/useAppDispatch';
 import { useAppSelector } from '#hooks/useAppSelector';
 import { useFeaturedProperties } from '#hooks/useFeaturedProperties';
@@ -26,7 +27,7 @@ export const FeaturedPropertiesSection = () => {
   }, []);
 
   return (
-    <SectionStyled sx={featuredPropertiesSectionStyles.root}>
+    <SectionStyled id={ANCHOR.FEATURED_PROPERTIES} sx={featuredPropertiesSectionStyles.root}>
       <Container>
         <SectionHeaderComponent
           description={t('featured_properties_section.description')}

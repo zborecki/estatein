@@ -9,10 +9,12 @@ export const ControlledTextFieldComponent = <T extends object>({
   <Controller
     control={control}
     name={name}
-    render={({ field }) => (
+    render={({ field, fieldState: { error } }) => (
       <TextField
         {...field}
+        error={!!error}
         fullWidth={fullWidth}
+        helperText={error?.message ?? ' '}
         InputProps={inputProps}
         placeholder={placeholder}
       />
