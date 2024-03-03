@@ -1,3 +1,4 @@
+import { AppBar } from '@mui/material';
 import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
@@ -7,6 +8,7 @@ import { HeaderComponent } from '#components/HeaderComponent';
 import { NotificationBarComponent } from '#components/NotificationBarComponent';
 import { useAppDispatch } from '#hooks/useAppDispatch';
 import { FETCH_NAVIGATION_THUNK } from '#redux/thunks/navigation.thunk';
+import { baseLayoutStyles } from '#theme/styles/baseLayout.styles';
 
 export const BaseLayout = () => {
   const dispatch = useAppDispatch();
@@ -18,8 +20,10 @@ export const BaseLayout = () => {
   return (
     <>
       <CatchAnchorsComponent />
-      <NotificationBarComponent />
-      <HeaderComponent />
+      <AppBar position="sticky" sx={baseLayoutStyles.header}>
+        <NotificationBarComponent />
+        <HeaderComponent />
+      </AppBar>
       <Outlet />
       <FooterComponent />
     </>
