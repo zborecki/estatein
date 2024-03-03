@@ -22,6 +22,7 @@ All commands are run from the root of the project, from a terminal:
 - react
 - react countup
 - react curved text
+- react hook form
 - react lazy load image component
 - react router
 - redux toolkit
@@ -30,3 +31,4 @@ All commands are run from the root of the project, from a terminal:
 - typescript
 - uuid
 - vite
+- yup

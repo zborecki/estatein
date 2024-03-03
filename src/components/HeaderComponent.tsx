@@ -19,7 +19,7 @@ export const HeaderComponent = () => {
   ), []);
 
   return (
-    <Box component="header" sx={headerStyles.root}>
+    <Box sx={headerStyles.root}>
       <Container sx={headerStyles.container}>
         <LogoComponent />
         {

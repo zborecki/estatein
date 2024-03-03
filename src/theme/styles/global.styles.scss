@@ -6,7 +6,7 @@ svg {
 
 .ios {
   &-home-indicator {
-    padding-bottom: calc(4px + env(safe-area-inset-top));
+    padding-bottom: calc(4px + env(safe-area-inset-bottom));
   }
 
   &-notch {
