@@ -3,6 +3,7 @@ import { Notification } from '#types/modules.types';
 export const NOTIFICATIONS_MOCKUP: Notification[] = [
   {
     button: {
+      isExternalLink: true,
       label: 'Learn More',
       to: 'https://www.google.pl/'
     },

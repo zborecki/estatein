@@ -14,6 +14,7 @@ export default defineConfig({
       '#assets': path.resolve(__dirname, './src/assets'),
       '#components': path.resolve(__dirname, './src/components'),
       '#constants': path.resolve(__dirname, './src/constants'),
+      '#forms': path.resolve(__dirname, './src/forms'),
       '#graphql': path.resolve(__dirname, './src/graphql'),
       '#hooks': path.resolve(__dirname, './src/hooks'),
       '#i18n': path.resolve(__dirname, './src/i18n'),

@@ -4,6 +4,16 @@ import { FONT_WEIGHT } from '#constants/typography.constants';
 import { defineBreakpoint } from '#theme/breakpoints.theme';
 
 export const typography: TypographyOptions = {
+  anchor1: {
+    fontSize: '1.125rem',
+    fontWeight: FONT_WEIGHT.MEDIUM,
+    lineHeight: '1.5rem'
+  },
+  anchor2: {
+    fontSize: '1rem',
+    fontWeight: FONT_WEIGHT.MEDIUM,
+    lineHeight: '1.5rem'
+  },
   body1: {
     fontSize: '1rem',
     fontWeight: FONT_WEIGHT.MEDIUM,

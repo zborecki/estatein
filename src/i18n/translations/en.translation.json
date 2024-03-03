@@ -3,8 +3,10 @@
     "common": "Sorry, but we're unable to connect to the server :("
   },
   "featured_properties_section": {
-    "description": "Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein.",
-    "title": "Featured properties"
+    "description": "Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein."
+  },
+  "footer": {
+    "copyright": "© {{year}} {{companyName}}. All rights reserved."
   },
   "hero_section": {
     "curved_text": "✨ Discovery Your Dream Property",
@@ -21,6 +23,10 @@
     "about_us": "About Us",
     "browse_properties": "Browse Properties",
     "contact_us": "Contact Us",
+    "faq": "FAQ",
+    "featured_properties": "Featured Properties",
+    "features": "Features",
+    "hero": "Hero",
     "home": "Home",
     "learn_more": "Learn More",
     "loading": "Loading",
@@ -31,7 +37,11 @@
     "properties": "Properties",
     "read_more": "Read More",
     "services": "Services",
+    "testimonials": "Testimonials",
     "view_property_details": "View Property Details"
+  },
+  "placeholder": {
+    "email": "Enter Your E-mail"
   },
   "summary_card": {
     "happy_customers": "Happy customers",
@@ -40,5 +50,9 @@
   },
   "test": {
     "ellipsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat ipsum ut diam efficitur, in placerat lectus bibendum. Etiam dignissim porttitor ligula, sed fermentum nibh fermentum quis. Duis porta enim quam, nec dignissim augue posuere id. Donec eget condimentum velit, quis facilisis nulla. Phasellus egestas dignissim viverra. Quisque eu purus ut lectus luctus laoreet vehicula et massa. Praesent at accumsan nibh. Sed condimentum, ante id maximus fringilla, tellus ipsum vestibulum diam, vehicula elementum magna lectus et turpis. Aliquam purus lorem, rhoncus in tristique quis, efficitur quis sem. Proin congue elit dolor. Nunc porta sit amet ipsum et rhoncus. In a est malesuada est dignissim venenatis eu eu turpis."
+  },
+  "validation": {
+    "email": "Incorrect e-mail address",
+    "required": "The field is required"
   }
 }
