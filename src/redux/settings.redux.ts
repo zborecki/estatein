@@ -1,5 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 
+import { FAQ_REDUCER } from './slices/faq.slice';
+
 import { SLICE } from '#redux/keys.redux';
 import { NAVIGATION_REDUCER } from '#redux/slices/navigation.slice';
 import { NOTIFICATIONS_REDUCER } from '#redux/slices/notifications.slice';
@@ -8,6 +10,7 @@ import { SOCIALS_REDUCER } from '#redux/slices/socials.slice';
 
 export const store = configureStore({
   reducer: {
+    [SLICE.FAQ]: FAQ_REDUCER,
     [SLICE.NAVIGATION]: NAVIGATION_REDUCER,
     [SLICE.NOTIFICATIONS]: NOTIFICATIONS_REDUCER,
     [SLICE.PROPERTIES]: PROPERTIES_REDUCER,

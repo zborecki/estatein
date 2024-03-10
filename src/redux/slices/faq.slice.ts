@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 import { SLICE } from '#redux/keys.redux';
-import { FETCH_PROPERTIES_THUNK } from '#redux/thunks/properties.thunk';
+import { FETCH_FAQ_THUNK } from '#redux/thunks/faq.thunk';
 import { SetOffsetAction, SetSkipAction, SetStatusAction } from '#types/redux/common.actions';
-import { PropertiesState } from '#types/redux/slices/properties.types';
+import { FAQState } from '#types/redux/slices/faq.types';
 
-const initialState: PropertiesState = {
+const initialState: FAQState = {
   aggregate: {
     count: 0
   },
@@ -21,34 +21,34 @@ const initialState: PropertiesState = {
   status: 'idle'
 };
 
-const propertiesSlice = createSlice({
+const faqSlice = createSlice({
   extraReducers: ({ addCase }) => {
-    addCase(FETCH_PROPERTIES_THUNK.fulfilled, (state, { payload }) => ({
+    addCase(FETCH_FAQ_THUNK.fulfilled, (state, { payload }) => ({
       ...state,
       ...payload,
       status: 'success'
     }));
-    addCase(FETCH_PROPERTIES_THUNK.pending, (state) => ({
+    addCase(FETCH_FAQ_THUNK.pending, (state) => ({
       ...state,
       status: 'loading'
     }));
-    addCase(FETCH_PROPERTIES_THUNK.rejected, (state) => ({
+    addCase(FETCH_FAQ_THUNK.rejected, (state) => ({
       ...state,
       status: 'error'
     }));
   },
   initialState,
-  name: SLICE.PROPERTIES,
+  name: SLICE.FAQ,
   reducers: {
-    SET_PROPERTIES_OFFSET: (state, { payload }: SetOffsetAction) => ({
+    SET_FAQ_OFFSET: (state, { payload }: SetOffsetAction) => ({
       ...state,
       offset: payload.offset
     }),
-    SET_PROPERTIES_SKIP: (state, { payload }: SetSkipAction) => ({
+    SET_FAQ_SKIP: (state, { payload }: SetSkipAction) => ({
       ...state,
       skip: payload.skip
     }),
-    SET_PROPERTIES_STATUS: (state, { payload }: SetStatusAction) => ({
+    SET_FAQ_STATUS: (state, { payload }: SetStatusAction) => ({
       ...state,
       message: payload.message,
       status: payload.status
@@ -58,9 +58,9 @@ const propertiesSlice = createSlice({
 
 export const {
   actions: {
-    SET_PROPERTIES_OFFSET,
-    SET_PROPERTIES_SKIP,
-    SET_PROPERTIES_STATUS
+    SET_FAQ_OFFSET,
+    SET_FAQ_SKIP,
+    SET_FAQ_STATUS
   },
-  reducer: PROPERTIES_REDUCER
-} = propertiesSlice;
+  reducer: FAQ_REDUCER
+} = faqSlice;

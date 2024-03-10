@@ -1,7 +1,7 @@
 import { styled } from '@mui/material';
 
 enum ATTRIBUTE {
-  PADDING = 7
+  PADDING = 45 / 8
 }
 
 export const SectionStyled = styled('section')(({ theme: { spacing } }) => ({
