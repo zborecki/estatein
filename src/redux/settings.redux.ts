@@ -1,8 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import { FAQ_REDUCER } from './slices/faq.slice';
-
 import { SLICE } from '#redux/keys.redux';
+import { FAQ_REDUCER } from '#redux/slices/faq.slice';
 import { NAVIGATION_REDUCER } from '#redux/slices/navigation.slice';
 import { NOTIFICATIONS_REDUCER } from '#redux/slices/notifications.slice';
 import { PROPERTIES_REDUCER } from '#redux/slices/properties.slice';

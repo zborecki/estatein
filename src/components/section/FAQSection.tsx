@@ -2,7 +2,6 @@ import { Container } from '@mui/material';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { skeletons } from '#/utils/skeletons';
 import { FAQBlockComponent } from '#components/FAQBlockComponent';
 import { PaginationComponent } from '#components/PaginationComponent';
 import { SectionHeaderComponent } from '#components/SectionHeaderComponent';
@@ -14,6 +13,7 @@ import { useAppSelector } from '#hooks/useAppSelector';
 import { useFAQ } from '#hooks/useFAQ';
 import { FETCH_FAQ_THUNK } from '#redux/thunks/faq.thunk';
 import { generateKey } from '#utils/generateKey';
+import { skeletons } from '#utils/skeletons';
 
 export const FAQSection = () => {
   const dispatch = useAppDispatch();

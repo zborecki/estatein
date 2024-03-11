@@ -6,7 +6,6 @@ type Sx = 'answer' | 'button' | 'question' | 'root';
 
 export const faqBlockStyles: Styles<Sx> = {
   answer: {
-    ...defineEllipsis({ lineClamp: 2 }),
     color: ({ palette }) => palette.grey[50],
     minHeight: 'calc(2 * 1rem * 1.5)',
     [defineBreakpoint('lg')]: {
