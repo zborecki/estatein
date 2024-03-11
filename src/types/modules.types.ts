@@ -3,6 +3,11 @@ import {
 } from '#types/atoms.types';
 import { ImageResponse } from '#types/graphql/common.types';
 
+export interface FAQ {
+  answer: string;
+  question: string;
+}
+
 export interface Notification {
   button?: Link;
   message: string;

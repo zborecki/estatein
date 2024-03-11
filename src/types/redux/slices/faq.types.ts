@@ -1,8 +1,8 @@
 import { PaginationMetaResponse } from '#types/graphql/pagination.types';
-import { Property } from '#types/modules.types';
+import { FAQ } from '#types/modules.types';
 import { PaginationSettings, ThunkState } from '#types/redux/common.types';
 
-export interface PropertiesState
+export interface FAQState
   extends PaginationMetaResponse, PaginationSettings, ThunkState {
-  data: Property[];
+  data: FAQ[];
 }
