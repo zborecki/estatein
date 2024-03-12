@@ -3,6 +3,7 @@ export const colors = {
     black: '#000000',
     white: '#FFFFFF'
   },
+  gold: '#FFE500',
   grey: {
     8: '#141414',
     10: '#1A1A1A',

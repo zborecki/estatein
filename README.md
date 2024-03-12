@@ -32,3 +32,5 @@ All commands are run from the root of the project, from a terminal:
 - uuid
 - vite
 - yup
+
+[![Preview](https://img.youtube.com/vi/QdobTGBeMQQ/0.jpg)](https://www.youtube.com/watch?v=QdobTGBeMQQ)
