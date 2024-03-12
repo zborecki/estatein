@@ -8,3 +8,11 @@ export const BASE_PAGINATION_META = `
     pageSize
   }
 `;
+
+export const CUSTOMER = `
+  avatar {
+    url
+  }
+  companyName
+  fullName
+`;

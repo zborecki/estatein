@@ -25,3 +25,16 @@ export interface Social {
   type: SocialType;
   url: string;
 }
+
+export interface Testimonial {
+  opinion: string;
+  rating: number;
+  representative: {
+    avatar?: {
+      url: string;
+    };
+    companyName: string;
+    fullName: string;
+  };
+  title: string;
+}

@@ -33,5 +33,8 @@ export const palette: PaletteOptions = {
   text: {
     primary: colors.absolute.white,
     secondary: colors.grey[60]
+  },
+  warning: {
+    main: colors.gold
   }
 };
